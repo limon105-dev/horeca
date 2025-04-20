@@ -93,12 +93,15 @@
     --paragraph-text-color: #333333;
     --color-alert: #8B1E3F;
     --text-muted: #808080;
+    --text-muted2: #666666;
     --section-bg: #D6CEC6;
     --section-bg2: #E9E4DA;
     --border-color: #333333;
+    --border-color2: #F9F5EF;
     --btn-color: #333333;
     --btn-bg: #D4AF37;
     --body-color: #F9F5EF;
+    --item-bg: #D5DDE6;
 
     /* font family */
     --heading-font: "PlayfairDisplay", serif;
@@ -231,7 +234,7 @@ button {
     padding: 14.5px 8px;
     transition: ease .3s;
     font-family: var(--paragraph-font2);
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
     display: inline-block;
     z-index: 1;
@@ -239,9 +242,14 @@ button {
     cursor: pointer;
     line-height: 1;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
-    border-radius: 50px;
+    align-items: center;
+    border-radius: 7.61px;
+    -webkit-border-radius: 7.61px;
+    -moz-border-radius: 7.61px;
+    -ms-border-radius: 7.61px;
+    -o-border-radius: 7.61px;
 }
 
 .btn:hover {
@@ -249,7 +257,7 @@ button {
 }
 
 .primary-btn {
-    color: var(--brand-color);
+    color: var(--paragraph-text-color);
     position: relative;
     overflow: hidden;
     background-color: var(--btn-bg);
@@ -314,23 +322,22 @@ button {
 
 /* section heading css start */
 .section-heading-wrap {
-    margin-bottom: 30px;
     text-align: center;
 }
 
 .section-heading-sub-title {
-    color: var(--heading-text-color);
-    font-family: var(--heading-font);
+    color: var(--text-muted2);
+    font-family: var(--paragraph-font2);
     font-weight: 400;
-    font-size: 30px;
-    margin: 0 0 10px 0;
+    font-size: 20px;
+    margin: 7px 0 0 0;
 }
 
 .section-heading-title {
-    color: var(--paragraph-text-color);
+    color: var(--heading-text-color);
     font-family: var(--heading-font);
-    font-weight: 400;
-    font-size: 60px;
+    font-weight: 700;
+    font-size: 48px;
 }
 
 .section-heading-btn {
@@ -555,6 +562,21 @@ button {
 
 @media only screen and (max-width:992px) {
 
+    /* navbar-section css start */
+    .navbar {
+        height: 80px;
+    }
+
+    .nav-icon-inner-wrapper .icon svg{
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-icon-inner-wrapper .text {
+        font-size: 14px;
+    }
+    /* navbar-section css end */
+
     /* footer-sction css start */
     .footer-top-items {
         gap: 60px;
@@ -592,25 +614,6 @@ button {
 }
 
 @media only screen and (max-width:767px) {
-
-    /* common css start */
-    .section-heading-wrap {
-        margin-bottom: 20px;
-    }
-
-    .section-heading-title {
-        font-size: 50px;
-    }
-
-    /* common css end */
-
-    /* navbar section css start */
-    .navbar {
-        height: 60px;
-    }
-
-    /* navbar section css end */
-
     /* footer section css start */
     .footer-section {
         padding: 20px 0;
@@ -649,9 +652,21 @@ button {
 @media only screen and (max-width: 575px) {
 
     /* navbar section css start */
-    .navbar-logo {
-        max-width: 166px;
+    .navbar {
+        height: 50px;
     }
 
+    .navbar-logo {
+        max-width: 136px;
+    }
+
+    .nav-icon-inner-wrapper .icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-icon-inner-wrapper .text {
+        font-size: 8.2px;
+    }
     /* navbar section css end */
 }

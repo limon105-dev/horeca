@@ -22,14 +22,23 @@ $(document).ready(function () {
 
 })
 
-
 // home-banner slider js start----
 var swiper = new Swiper(".product-single-img-slider-thumb", {
 	freeMode: true,
 	loop: true,
-	spaceBetween:18.5,
+	spaceBetween: 18.5,
 	slidesPerView: 5,
 	watchSlidesProgress: true,
+	breakpoints: {
+		// when window width is <= 1px
+		1: {
+			spaceBetween: 11
+		},
+		// when window width is <= 576px
+		576: {
+			spaceBetween: 18.5
+		}
+	}
 });
 var swiper2 = new Swiper(".product-single-img-slider", {
 	autoHeight: true,

@@ -1,0 +1,81 @@
+/* brand section css start */
+.brand-section {
+    background-color: var(--color-alert);
+}
+
+.brand-section-heading-wrap {
+    position: relative;
+    text-align: center;
+}
+
+.brand-section-heading-wrap::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    background-color: var(--body-color);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.brand-section-heading {
+    color: var(--body-color);
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 28.5px;
+    text-align: center;
+    padding: 0 32px;
+    background-color: var(--color-alert);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.brand-items {
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand-section-text{
+    padding: 0 0 10px 0;
+}
+
+.brand-section-text p {
+    color: var(--body-color);
+    font-family: var(--paragraph-font);
+    font-weight: 800;
+    font-size: 21.62px;
+    text-align: center;
+}
+
+/* brand section css end */
+
+@media only screen and (max-width: 575px){
+    /* brand section css start */
+    .brand-section-heading {
+        font-size: 19.35px;
+        padding: 0 24px;
+    }
+
+    .brand-section-text {
+        padding: 10px 0 10px 0;
+    }
+
+    .brand-section-text p {
+        font-size: 9.31px;
+        max-width: 164px;
+        margin: 0 auto;
+    }
+
+    .brand-items {
+        gap: 43px;
+    }
+    /* brand section css end */
+}
