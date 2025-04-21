@@ -20,6 +20,14 @@ $(document).ready(function () {
 	});
 	// **..product-accordion js end..**
 
+		// **..faq-accordion js start..**
+		$('.faq-accordion-toggle-btn').on('click', function () {
+			$(this).next().slideToggle();
+			$(this).parent().toggleClass('active');
+			$(this).parent().siblings().removeClass('active').find('.faq-accordion-item-content').slideUp();
+		});
+		// **..faq-accordion js end..**
+
 })
 
 // home-banner slider js start----

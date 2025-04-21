@@ -1,0 +1,120 @@
+/* cta-section css start */
+.cta-section {
+    padding: 28px 0 42px;
+    background-color: var(--section-bg);
+}
+
+.cta-content {
+    max-width: 486px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content-title {
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.cta-content-text {
+    color: var(--color-alert);
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 39px;
+    margin: 10px 0 0 0;
+}
+
+.cta-input-field {
+    margin: 30px 0 0 0;
+    display: flex;
+    height: 70px;
+    background-color: var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: relative;
+}
+
+.cta-input-field input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--btn-bg);
+    border-right: 0;
+    padding: 0 145px 0 25px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: var(--black);
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.cta-input-field input::placeholder {
+    opacity: 0.3;
+    color: var(--black);
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.cta-input-field button {
+    height: 100%;
+    border: 1px solid var(--black);
+    background-color: var(--btn-bg);
+    padding: 0 34px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    color: var(--white);
+    font-family: var(--paragraph-font);
+    font-weight: 700;
+    font-size: 21.5px;
+}
+
+/* cta-section css end */
+
+@media only screen and (max-width:575px) {
+
+    /* cta-section css start */
+    .cta-content-title {
+        font-size: 24px;
+    }
+
+    .cta-content-text {
+        font-size: 14px;
+        line-height: 26px;
+        margin: 6px 0 0 0;
+    }
+
+    .cta-input-field {
+        margin: 15px 0 0 0;
+        height: 47px;
+    }
+
+    .cta-input-field input {
+        padding: 0 119px 0 25px;
+        font-size: 11px;
+    }
+
+    .cta-input-field input::placeholder {
+        font-size: 11px;
+    }
+
+    .cta-input-field button {
+        font-size: 14px;
+        padding: 0 24px;
+    }
+
+    /* cta-section css end */
+}
