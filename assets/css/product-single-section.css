@@ -156,9 +156,12 @@
 .product-price {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
+    max-width: 413px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .prevoius-price,
@@ -265,17 +268,18 @@
     font-family: var(--heading-font);
     font-weight: 600;
     font-size: 36px;
-    margin: 0 0 35px 0;
+    margin: 0 0 50px 0;
 }
 
 .product-varient-field-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
+    gap: 19px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .product-varient-field {
     user-select: none;
+    position: relative;
 }
 
 .product-varient-field input {
@@ -283,12 +287,20 @@
     height: 0;
     opacity: 0;
     visibility: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .product-varient-field label {
     box-shadow: 0px 3.27px 5.63px 0px #00000040 inset;
     position: relative;
-    width: 84px;
+    width: 100%;
     height: 182px;
     display: block;
     border: 0.82px solid #FFFFFFB2;
@@ -319,6 +331,11 @@
     -moz-transition: all ease .3s;
     -ms-transition: all ease .3s;
     -o-transition: all ease .3s;
+    height: 100%;
+}
+
+.product-varient-field-img img {
+    object-fit: contain;
 }
 
 .product-varient-field label .label-overlay {
@@ -428,10 +445,10 @@
 }
 
 .product-quantity-items {
-    display: flex;
-    flex-wrap: wrap;
     gap: 12px;
     row-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .product-quantity-item {
@@ -456,7 +473,6 @@
 .product-quantity-item label {
     cursor: pointer;
     display: block;
-    width: 116px;
     padding: 20px 8px 8px 8px;
     background-color: var(--body-color);
     text-align: center;
@@ -777,12 +793,20 @@
 
     /* product-single section css start */
     .product-single-section {
-        padding: 0 0 50px;
+        padding: 20px 0 50px;
         margin: 50px 0 0 0;
     }
 
     .product-single-wrapper {
         gap: 11.66px;
+    }
+
+    .product-single-img-slider .swiper-slide {
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
     }
 
     .product-single-img-slider-thumb {
@@ -846,6 +870,7 @@
 
     .product-single-quantity-lists {
         margin: 5px auto 0;
+        max-width: 265px;
     }
 
     .product-single-quantity-lists li {
@@ -867,6 +892,7 @@
 
     .product-price {
         flex-wrap: nowrap;
+        max-width: 265px;
     }
 
     .price-save {
@@ -925,7 +951,6 @@
     }
 
     .product-varient-field label {
-        width: 51px;
         height: 110px;
     }
 
@@ -956,7 +981,6 @@
     }
 
     .product-quantity-item label {
-        width: 70.4px;
         padding: 14px 8px 4px 8px;
     }
 
@@ -1035,7 +1059,15 @@
     }
 
     .product-accordion-item .item-title-wrapper {
-        padding: 14px 13px 13px 22px;
+        padding: 19px 13px 18px 22px;
+    }
+
+    .product-accordion-item {
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
     }
 
     .product-accordion-item .item-title-wrapper .icon {
@@ -1111,5 +1143,6 @@
         text-wrap-mode: nowrap;
         margin: 11px 0 0 0;
     }
+
     /* product-single section css end */
 }

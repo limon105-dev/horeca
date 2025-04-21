@@ -278,7 +278,7 @@ button {
 }
 
 .primary-btn span {
-    background-color: var(--btn-color);
+    background-color: var(--white);
 }
 
 .primary-btn:hover {
@@ -478,12 +478,16 @@ button {
     }
 
     .nav-icon-inner-wrapper .icon svg {
-        width: 20px;
-        height: 20px;
+        width: auto;
+        height: 21px;
     }
 
     .nav-icon-inner-wrapper .text {
         font-size: 8.2px;
+    }
+
+    .nav-icons ul {
+        gap: 13px;
     }
 
     /* navbar section css end */

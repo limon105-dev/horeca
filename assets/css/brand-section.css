@@ -50,9 +50,14 @@
 .brand-section-text p {
     color: var(--body-color);
     font-family: var(--paragraph-font);
-    font-weight: 800;
+    font-weight: 600;
     font-size: 21.62px;
     text-align: center;
+}
+
+.brand-section-text p em{
+    font-weight: 800;
+    font-style: normal;
 }
 
 /* brand section css end */
@@ -70,7 +75,7 @@
 
     .brand-section-text p {
         font-size: 9.31px;
-        max-width: 164px;
+        max-width: 175px;
         margin: 0 auto;
     }
 

@@ -86,25 +86,24 @@
 }
 
 .faq-accordion-item-content ul {
-    margin-left: 28px;
+    margin-left: 40px;
 }
 
 .faq-accordion-item-content ul li {
     list-style-type: decimal;
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
 }
 
 .faq-accordion-item-content ul li:last-child {
     margin: 0;
 }
 
-.faq-accordion-item-content ul li,
-.faq-accordion-item-content ul li p {
+.faq-accordion-item-content ul li, .faq-accordion-item-content ul li p {
     color: var(--black);
     font-family: var(--paragraph-font);
     font-weight: 400;
-    font-size: 28px;
-    line-height: 42.57px;
+    font-size: 22px;
+    line-height: 30.57px;
 }
 
 /* faq-section css end */
@@ -166,8 +165,8 @@
     }
 
     .faq-accordion-item .item-title-wrapper .item-title {
-        font-size: 9px;
-        line-height: 13.57px;
+        font-size: 14px;
+        line-height: 21.57px;
     }
 
     .faq-accordion-item .item-title-wrapper .icon svg {
@@ -180,12 +179,12 @@
     }
 
     .faq-accordion-item-content ul {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .faq-accordion-item-content ul li, .faq-accordion-item-content ul li p {
-        font-size: 8px;
-        line-height: 10.57px;
+        font-size: 12px;
+        line-height: 18.57px;
     }
     /* faq-section css end */
 }

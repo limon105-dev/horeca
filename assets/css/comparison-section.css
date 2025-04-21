@@ -135,6 +135,11 @@
         height: 13.49px;
     }
 
+    .comparison-item.comparison-item-black ul li .icon svg {
+        width: 9.22px;
+        height: 6.34px;
+    }
+
     .comparison-item ul li p {
         font-size: 8.64px;
         margin: 2px 0 0 0;
